@@ -1,5 +1,5 @@
 # Alphafold2_no_docker 2023-09-30
-### **if anaconda not be install**
+### **if anaconda not installed**
 ``` bash
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh
 ```
