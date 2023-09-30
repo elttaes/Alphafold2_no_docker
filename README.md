@@ -1,6 +1,10 @@
 # Alphafold2_no_docker
 
 ``` bash
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh
+```
+
+``` bash
 git clone https://github.com/google-deepmind/alphafold
 cd alphafold
 conda create -n alphafold2 python=3.9
