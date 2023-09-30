@@ -1,7 +1,6 @@
 # Alphafold2_no_docker
 
-git clone https://github.com/google-deepmind/alphafold
-
+git clone https://github.com/google-deepmind/alphafold \\
 cd alphafold
 
 conda create -n alphafold2 python=3.9
