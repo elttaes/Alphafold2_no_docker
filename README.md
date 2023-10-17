@@ -15,10 +15,10 @@ pip3 install --no-dependencies ./alphafold
 pip3 install pyopenssl==22.0.0
 
 mkdir -p alphafold/alphafold/common
+wget https://git.scicore.unibas.ch/schwede/openstructure/-/raw/7102c63615b64735c4941278d92b554ec94415f8/modules/mol/alg/src/stereo_chemical_props.txt
 cp -f alphafold/stereo_chemical_props.txt alphafold/alphafold/common
-mkdir -p /opt/conda/lib/python3.10/site-packages/alphafold/common/
-cp -f stereo_chemical_props.txt /opt/conda/lib/python3.10/site-packages/alphafold/common/
-
+mkdir -p ~/miniconda3/envs/alphafold/lib/python3.10/site-packages/alphafold/common/
+cp -f stereo_chemical_props.txt ~/miniconda3/envs/alphafold/lib/python3.10/site-packages/alphafold/common/
 pip install --upgrade --no-cache-dir jax==0.3.25 jaxlib=0.3.25 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 pip install mock
 ```
