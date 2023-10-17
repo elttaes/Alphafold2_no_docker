@@ -21,4 +21,5 @@ mkdir -p ~/miniconda3/envs/alphafold/lib/python3.10/site-packages/alphafold/comm
 cp -f stereo_chemical_props.txt ~/miniconda3/envs/alphafold/lib/python3.10/site-packages/alphafold/common/
 pip install --upgrade --no-cache-dir jax==0.3.25 jaxlib=0.3.25 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 pip install mock
+conda install -c "nvidia/label/cuda-11.3.1" cuda-nvcc
 ```
