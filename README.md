@@ -7,8 +7,8 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh && ba
 ``` bash
 git clone https://github.com/google-deepmind/alphafold
 cd alphafold
-conda create -n alphafold2 python=3.10
-conda activate alphafold2
+conda create -n alphafold python=3.10
+conda activate alphafold
 conda install -c "nvidia/label/cuda-11.8" cuda-nvcc
 conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
