@@ -12,7 +12,8 @@ conda activate alphafold
 conda install -c "nvidia/label/cuda-11.8" cuda-nvcc
 conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
-conda install openmm=7.7.0 pdbfixer -c conda-forge 
+conda install openmm=7.7.0 pdbfixer -c conda-forge
+conda install kalign3 -c bioconda
 pip3 install -r requirements.txt
 pip3 install --no-dependencies ../alphafold
 pip3 install pyopenssl==22.0.0
@@ -23,6 +24,7 @@ cp -f alphafold/stereo_chemical_props.txt alphafold/alphafold/common
 mkdir -p ~/miniconda3/envs/alphafold/lib/python3.10/site-packages/alphafold/common/
 cp -f stereo_chemical_props.txt ~/miniconda3/envs/alphafold/lib/python3.10/site-packages/alphafold/common/
 pip install mock
+
 pip install --upgrade "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 
 ```
