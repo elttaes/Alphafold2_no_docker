@@ -13,8 +13,8 @@ conda install -c "nvidia/label/cuda-11.8" cuda-nvcc
 conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
 conda install openmm=7.7.0 pdbfixer -c conda-forge 
-pip3 install -r ./alphafold/requirements.txt
-pip3 install --no-dependencies ./alphafold
+pip3 install -r requirements.txt
+pip3 install --no-dependencies ../alphafold
 pip3 install pyopenssl==22.0.0
 
 mkdir -p alphafold/alphafold/common
