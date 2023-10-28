@@ -9,6 +9,9 @@ git clone https://github.com/google-deepmind/alphafold
 cd alphafold
 conda create -n alphafold2 python=3.10
 conda activate alphafold2
+conda install -c "nvidia/label/cuda-11.8" cuda-nvcc
+conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
+
 conda install openmm=7.7.0 pdbfixer -c conda-forge 
 pip3 install -r ./alphafold/requirements.txt
 pip3 install --no-dependencies ./alphafold
@@ -19,7 +22,7 @@ wget https://git.scicore.unibas.ch/schwede/openstructure/-/raw/7102c63615b64735c
 cp -f alphafold/stereo_chemical_props.txt alphafold/alphafold/common
 mkdir -p ~/miniconda3/envs/alphafold/lib/python3.10/site-packages/alphafold/common/
 cp -f stereo_chemical_props.txt ~/miniconda3/envs/alphafold/lib/python3.10/site-packages/alphafold/common/
-pip install --upgrade --no-cache-dir jax==0.3.25 jaxlib=0.3.25 -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 pip install mock
-conda install -c "nvidia/label/cuda-11.3.1" cuda-nvcc
+pip install --upgrade "jax[cuda11_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+
 ```
