@@ -9,8 +9,9 @@ git clone https://github.com/google-deepmind/alphafold
 cd alphafold
 conda create -n alphafold python=3.10
 conda activate alphafold
-conda install -c "nvidia/label/cuda-11.8" cuda-nvcc
-conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
+conda install conda-forge::cudatoolkit
+# conda install -c "nvidia/label/cuda-11.8" cuda-nvcc
+# conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit
 
 conda install openmm=7.7.0 pdbfixer -c conda-forge
 conda install kalign3 -c bioconda
